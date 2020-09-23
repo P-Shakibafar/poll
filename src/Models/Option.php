@@ -56,7 +56,7 @@ class Option extends Model
      */
     public function votesPercent($totalVotes = 0)
     {
-        $optionVotesCount = $this->votesCount['count'];
+        $optionVotesCount = $this->votesCount?$this->votesCount['count']:0;
 
         if ($optionVotesCount == 0 && $totalVotes == 0)
         {
