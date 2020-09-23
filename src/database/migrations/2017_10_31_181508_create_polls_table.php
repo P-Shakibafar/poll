@@ -16,7 +16,7 @@ class CreatePollsTable extends Migration
         Schema::create('polls', function (Blueprint $table) {
             $table->increments('id');
             $table->string('title');
-            $table->text('description');
+            $table->text('description')->nullable();
             $table->boolean('multichoice')->default(false);
             $table->boolean('closed')->default(false);
             $table->dateTime('ends_at')->nullable()->default(null);
