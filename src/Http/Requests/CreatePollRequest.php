@@ -25,7 +25,7 @@ class CreatePollRequest extends FormRequest
     {
         return [
             'title' => 'required|max:140',
-            'description' => 'required',
+            'description' => 'nullable',
             'options.*' => 'required|max:140',
             'multichoice' => 'boolean',
             'ends_at' => 'nullable|date',
