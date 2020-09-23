@@ -9,7 +9,7 @@
 
     <div class="form-group">
         <label for="body">Poll description</label>
-        <textarea name="description" id="description" class="form-control" rows="3" required="required" placeholder="Description...">{{ old('description') }}</textarea>
+        <textarea name="description" id="description" class="form-control" rows="3" placeholder="Description...">{{ old('description') }}</textarea>
     </div>
 
     <legend>Options</legend>
