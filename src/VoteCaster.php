@@ -62,6 +62,9 @@ class VoteCaster
         {
             $option = $this->option->findOrFail($option);
             $poll = $option->poll;
+            if($poll->id!==$pollId){
+                throw new InvalidOptionException;
+            }
         }
         catch (Exception $e)
         {
